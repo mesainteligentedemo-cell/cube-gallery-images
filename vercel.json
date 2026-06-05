@@ -10,6 +10,18 @@
   ],
   "routes": [
     {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/face-(.*)\\.png",
+      "dest": "/public/face-$1.png"
+    },
+    {
+      "src": "/(.+)",
+      "dest": "/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
