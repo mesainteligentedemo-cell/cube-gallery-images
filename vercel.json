@@ -1,32 +1,9 @@
 {
-  "name": "cube-gallery-bad-art",
   "version": 2,
-  "public": true,
   "builds": [
     {
       "src": "index.html",
       "use": "@vercel/static"
     }
-  ],
-  "routes": [
-    {
-      "src": "/public/(.*)",
-      "dest": "/public/$1"
-    },
-    {
-      "src": "/face-(.*)\\.png",
-      "dest": "/public/face-$1.png"
-    },
-    {
-      "src": "/(.+)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "VERCEL_ANALYTICS_ID": ""
-  }
+  ]
 }
