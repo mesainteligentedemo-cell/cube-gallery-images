@@ -1,0 +1,19 @@
+{
+  "name": "cube-gallery-bad-art",
+  "version": "1.0.0",
+  "description": "Interactive 3D cube gallery exploring reverse creativity and AI art",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server",
+    "build": "echo 'No build needed for static site'"
+  },
+  "keywords": [
+    "3d",
+    "cube",
+    "gallery",
+    "interactive",
+    "ai-art"
+  ],
+  "author": "Luis Martinez",
+  "license": "MIT"
+}
