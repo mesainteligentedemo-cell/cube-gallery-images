@@ -1000,18 +1000,33 @@
 
   <script>
     const IMAGE_SRCS = [
-      "/face-0.png",
-      "/face-1.png",
-      "/face-2.png",
-      "/face-3.png",
-      "/face-4.png",
-      "/face-5.png",
-      "/face-6.png",
-      "/face-7.png",
-      "/face-8.png",
-      "/face-9.png",
-      "/face-10.png",
-      "/face-11.png"
+      "/face-0.jpg",
+      "/face-1.jpg",
+      "/face-2.jpg",
+      "/face-3.jpg",
+      "/face-4.jpg",
+      "/face-5.jpg",
+      "/face-6.jpg",
+      "/face-7.jpg",
+      "/face-8.jpg",
+      "/face-9.jpg",
+      "/face-10.jpg",
+      "/face-11.jpg"
+    ];
+
+    const IMAGE_ALTS = [
+      "AUTOMATIZA - Automated property management system illustration",
+      "INTEGRA - Single point of truth integration illustration",
+      "OPTIMIZA - Chaos to order optimization process illustration",
+      "ESCALA - Scalable growth architecture illustration",
+      "MONITOREA - Real-time data monitoring dashboard illustration",
+      "SEGURIDAD - Data security and protection illustration",
+      "COMPLIANCE - Customer trust and compliance illustration",
+      "CUSTOMIZACION - Personalized customization illustration",
+      "ONBOARDING - Quick onboarding process illustration",
+      "ROI TRACKING - Return on investment measurement illustration",
+      "BIOMECANCIA - Bio-technological systems fusion illustration",
+      "FUSION - Integration of automation and data systems"
     ];
 
     const IMAGE_ASPECTS = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
@@ -1138,7 +1153,7 @@
         img = new Image();
         face.appendChild(img);
       }
-      img.alt = FACE_NAMES[imgIdx] ?? "";
+      img.alt = IMAGE_ALTS[imgIdx] ?? FACE_NAMES[imgIdx] ?? "";
       img.src = src;
       img.style.objectFit = (IMAGE_ASPECTS[imgIdx] ?? 1) !== 1 ? "contain" : "";
     }
